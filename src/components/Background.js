@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from './Title';
+import { Link } from 'react-router-dom';
 
 const StyledBackground = styled.div`
   background-image: url(${({ background }) => background});
@@ -50,11 +51,21 @@ const CustomTitle = styled(Title)`
   width: 100%;
 `;
 
-const Background = ({ background, animation, watermark }) => (
+const BackButton = styled(Link)`
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: white;
+  text-decoration: underline;
+  z-index: 3;
+`;
+
+const Background = ({ background, animation, watermark, back }) => (
   <>
     <StyledBackground background={background} />
     {animation ? <OverflowAnimated /> : <OverflowNonAnimated /> }
     {watermark && <CustomTitle size="p" />}
+    {back && <BackButton to={back}>voltar</BackButton>}
   </>
 );
 

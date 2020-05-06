@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, Prompt } from 'react-router-dom';
 import background from '../assets/background.jpg';
+import main from '../assets/main.mp3';
 import Background from '../components/Background';
 import Title from '../components/Title';
 
@@ -40,12 +41,21 @@ const Page = styled.div`
   flex-direction: column;
 `;
 
-const App = () => (
-  <Page>
+const App = () => {
+  const audio = new Audio(main);
+  audio.play();
+
+  return <Page>
+    <Prompt
+      message={() => audio.pause()}
+    />
     <Background background={background} animation/>
     <Title size="g" fade />
     <Button><Link to="/home">Vamos lá</Link></Button>
+    <div>
+      <audio src='../assets/main.mp3' autoPlay/>
+    </div>
   </Page>
-);
+};
 
 export default App;

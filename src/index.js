@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './pages/App';
 import Home from './pages/Home';
+import Player from './pages/Player';
+import Master from './pages/Master';
+import Role from './pages/Role';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 
@@ -12,6 +15,9 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact={true} component={App} />
             <Route path="/home" component={Home} />
+            <Route path="/player" component={Player} />
+            <Route path="/master" component={Master} />
+            <Route path="/role" component={Role} />
         </Switch>
     </ BrowserRouter>
   </React.StrictMode>,

@@ -31,54 +31,67 @@ const TitleFade = styled.p`
     0%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     15%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     20%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     25%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     30%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     35%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     60%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     65%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     70%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     75%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     80%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     90%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     100%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
   }
 `;
@@ -101,54 +114,67 @@ const TitleNonFade = styled.p`
     0%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     15%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     20%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     25%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     30%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     35%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     60%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     65%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     70%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     75%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     80%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
     90%{
       font-style: italic;
       color: yellow;
+      font-size: ${({ size }) => sizes[size]*1.1}px;
     }
     100%{
       font-style: normal;
       color: white;
+      font-size: ${({ size }) => sizes[size]}px;
     }
   }
 `;
