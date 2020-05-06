@@ -78,11 +78,11 @@ const Player = () => {
     <Background background={background} watermark back="/home" />
     <Page>
       <Welcome>bem-vindo, jogador :)</Welcome>
-      <Label>por favor, selecione uma das opcoes abaixo</Label>
+      <Label>por favor, selecione uma das opcoes abaixo para entrar na realidade aumentada</Label>
       <Container augmented-ui='tl-clip br-clip exe'>
         <input id="file-input" type="file" name="name" onChange={getFile} style={{display: 'none'}} />
         <CardInverted onClick={() => document.getElementById('file-input').click()}>
-          <Text>insira um cartucho de realidade aumentada</Text>
+          <Text>insira um cartucho ja gerado</Text>
         </CardInverted>
         <Card onClick={() => localStorage.setItem('player-profile', '')} to="/role">
           <Text>crie um novo cartucho</Text>
