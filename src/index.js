@@ -5,7 +5,7 @@ import App from './pages/App';
 import Home from './pages/Home';
 import Player from './pages/Player';
 import Master from './pages/Master';
-import Role from './pages/Role';
+import Role from './pages/role/Role';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 

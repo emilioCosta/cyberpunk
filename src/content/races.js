@@ -1,7 +1,11 @@
 
+import android from '../assets/android.png';
+import cyborg from '../assets/cyborg.png';
+import human from '../assets/human.png';
+import replicant from '../assets/replicant.png';
+
 const races = {
-	title: `As raças presentes em Terra Cyberpunk RPG são todas correlacionadas com a raça humana, diferente de 
-					Shadowrun onde criaturas mágicas existem. Em Terra Cyberpunk RPG todas raças possuem uma história que 
+	title: `Todas as raças possuem uma história que 
 					necessitam ser seguidas durante a narrativa, a carga histórica dessas raças devem ser levadas em 
 					consideração na hora da escolha. As raças definem também o limite dos atributos e pontos de atributos 
 					iniciais.`,
@@ -9,7 +13,7 @@ const races = {
 		id: 0,
 		slug: 'android',
 		name: 'Androide',
-		image: 'android.png',
+		image: android,
 		initialPoints: 15,
 		limitations: {
 			strength: 7,
@@ -46,7 +50,7 @@ const races = {
 		id: 1,
 		slug: 'human',
 		name: 'Humano',
-		image: 'human.png',
+		image: human,
 		initialPoints: 10,
 		limitations: {
 			strength: 3,
@@ -74,8 +78,8 @@ const races = {
 	}, {
 		id: 2,
 		slug: 'cyborg',
-		name: 'Cyborg',
-		image: 'cyborg.png',
+		name: 'Cyborgue',
+		image: cyborg,
 		initialPoints: 13,
 		limitations: {
 			strength: 6,
@@ -98,7 +102,7 @@ const races = {
 		id: 3,
 		slug: 'replicant',
 		name: 'Humandróides',
-		image: 'replicant.png',
+		image: replicant,
 		initialPoints: 12,
 		limitations: {
 			strength: 4,
